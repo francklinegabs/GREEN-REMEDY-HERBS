@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Remedy</title>
+    
+    <!-- AOS Library (CSS) for scrolling animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4F4EC; /* Soft, warm, earthy background color */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Herbal Themed Colors */
+        :root {
+            --primary-green: #4CAF50;
+            --light-green: #81C784;
+            --beige: #F5F5DC;
+            --dark-green: #2E7D32;
+            --brown: #8B4513;
+            --text-color: #333;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 15px;
+            background-color: var(--primary-green);
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for navigation links */
+        nav ul li a:hover {
+            color: var(--brown); /* Changes color to brown */
+        }
+
+        /* Hero Section */
+        header.hero {
+            background-color: var(--light-green);
+            color: white;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        header.hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header.hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background-color: white;
+            color: var(--dark-green);
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: var(--dark-green);
+            color: white;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 60px 20px;
+            background-color: #FFFFFF;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--primary-green);
+        }
+
+        .about-content, .herb-list, .consultation, .blog-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .herb-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .herb-card h3 {
+            color: var(--primary-green);
+        }
+
+        /* Contact Form */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label, input, textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: var(--primary-green);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: var(--dark-green);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#herbal-treatments">Herbal Treatments</a></li>
+            <li><a href="#consultation">Consultation</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" data-aos="fade-in">
+        <header class="hero">
+            <div>
+                <h1>Natural Herbal Healing</h1>
+                <p>Discover the power of natural remedies for your well-being.</p>
+                <a href="#herbal-treatments" class="cta-button">Explore Treatments</a>
+            </div>
+        </header>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" data-aos="fade-up">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>We are dedicated to providing natural, holistic herbal remedies that nurture the body and soul. Our team of experienced herbalists is passionate about promoting health through nature’s healing powers.</p>
+            <img src="img\WhatsApp Image 2024-10-11 at 12.07.37.jpeg" alt="Our Team" style="width:50%; border-radius:10px;">
+        </div>
+    </section>
+
+    <!-- Herbal Treatments Section -->
+    <section id="herbal-treatments" data-aos="fade-up">
+        <h2>Herbal Treatments</h2>
+        <div class="herb-list">
+            <div class="herb-card" data-aos="fade-left">
+                <h3>Chamomile</h3>
+                <p>Uses: Stress relief, relaxation, digestion aid.</p>
+            </div>
+            <div class="herb-card" data-aos="fade-right">
+                <h3>Echinacea</h3>
+                <p>Uses: Immune booster, common cold remedy.</p>
+            </div>
+            <!-- Add more herbs here -->
+        </div>
+    </section>
+
+    <!-- Consultation Services Section -->
+    <section id="consultation" data-aos="fade-up">
+        <h2>Consultation Services</h2>
+        <div class="consultation">
+            <p>We offer personalized consultations to help you find the right herbal remedy for your needs. Our specialists provide both in-person and online consultations tailored to your health goals.</p>
+            <a href="#contact" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" data-aos="fade-up">
+        <h2>Blog</h2>
+        <div class="blog-content">
+            <p>Stay informed with the latest in herbal medicine and holistic health tips. Our regularly updated blog offers insights on using nature’s remedies for a healthier life.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us on social media</p>
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+    </footer>
+
+    <!-- AOS Library (JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            once: true // Animation only happens once per element
+        });
+    </script>
+</body>
+</html>
